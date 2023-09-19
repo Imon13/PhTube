@@ -28,7 +28,7 @@ const showDetails = async (categoryId) =>{
         div.innerHTML = `
         
         
-        <div class="card bg-base-100 shadow-xl container mx-auto">
+        <div class="card bg-base-100 shadow-xl container mx-auto grow">
       <figure><img src="${news?.thumbnail}" /></figure>
       <div class="card-body">
         <h2 class="card-title">${news?.title}</h2>
@@ -40,10 +40,7 @@ const showDetails = async (categoryId) =>{
     </div>
         
         
-        <div class="card-actions ">
-          <button class="btn btn-primary">Buy Now</button>
-        </div>
-      </div>
+        
     </div>
 
         `
@@ -53,6 +50,10 @@ const showDetails = async (categoryId) =>{
 
     });
 
+}
+const handledBlog = ()=>{
+  const blog = document.getElementById('blog-container')
+  blog = window.location.href='blog.html'
 }
 
 handleCatageroy()
